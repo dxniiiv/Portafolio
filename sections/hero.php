@@ -19,10 +19,24 @@
             priorización efectiva y una clara visión centrada en el usuario.
         </p>
 
-        <div class="hero-buttons">
-             <button class="btn primary" data-lang="contactame">Contáctame</button>
-            <a href="pdf/cv español.pdf" download class="btn secondary">Descargar CV</a>
+      <div class="hero-buttons">
+
+    <button class="btn primary">
+        <i class='bx bx-chat'></i> <span data-lang="contactame">Contáctame</span>
+    </button>
+
+    <div class="cv-dropdown">
+        <button class="btn secondary">
+            <i class='bx bx-download'></i> <span data-lang="descargarCV">Descargar CV</span>
+        </button>
+
+        <div class="cv-options">
+            <a href="pdf/cv español.pdf" download>Español</a>
+            <a href="pdf/cv ingles.pdf" download>English</a>
         </div>
+    </div>
+
+</div>
 
         <div class="socials">
         <a href="https://www.linkedin.com/in/daniel-vargas-2154483ab" target="_blank">

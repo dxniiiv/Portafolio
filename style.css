@@ -79,6 +79,38 @@ nav ul li a.active {
     padding: 0 8%; /* 🔥 menos margen lateral */
     padding-top: 90px; 
 }
+.cv-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cv-options {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 110%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.cv-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.cv-options a:hover {
+    background: #f0f0f0;
+}
+
+/* Mostrar al pasar el mouse */
+.cv-dropdown:hover .cv-options {
+    display: block;
+}
 
 .hero-text {
     max-width: 650px;
@@ -125,6 +157,7 @@ nav ul li a.active {
     margin-bottom: 30px;
     line-height: 1.6;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hero-buttons {
@@ -134,7 +167,7 @@ nav ul li a.active {
 }
 
 .btn {
-    padding: 12px 28px;
+    padding: 12px 18px;
     border-radius: 12px;
     font-weight: 600;
     text-decoration: none;
@@ -235,6 +268,7 @@ nav ul li a.active {
     padding-left: 20px;
     line-height: 1.7;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Nombre resaltado */
@@ -272,6 +306,10 @@ nav ul li a.active {
     margin-bottom: 15px;
 }
 
+.kanban-icon {
+    font-size: 70px;
+}
+
 /* Icono superior */
 .card-header img {
     width: 25px;
@@ -294,6 +332,7 @@ nav ul li a.active {
     margin-top: 5px;
     font-size: 14px;
     opacity: 0.8; /* 🔥 lo hace más sutil */
+    
 }
 
 /* ===== INTERESES ===== */
@@ -342,4 +381,107 @@ nav ul li a.active {
         padding-left: 0;
         padding-top: 15px;
     }
+}
+
+/* SECCION HABILIDADES */
+
+/* SECCIÓN */
+.skills {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+/* TITULOS */
+.skills h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    margin: 40px 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔵 HARD SKILLS */
+.hard-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.skill-card {
+    background: #9fc5f8;
+    padding: 20px;
+    border-radius: 15px;
+    width: 160px;
+    text-align: center;
+    color: black;
+}
+
+.skill-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 🔵 SOFT SKILLS */
+.soft-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.soft-card {
+    background: #9fc5f8;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: left;
+    color: black;
+}
+
+.soft-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0f5c83;
+}
+
+.soft-card h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+.soft-card p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.soft-header i {
+    margin-right: 12px; /* 🔥 separa icono del texto */
+}
+
+.soft-card, .hard-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.soft-card:hover, .hard-card:hover {
+    transform: translateY(-6px); /* 🔥 se levanta */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* 🔥 sombra */
+}
+
+.skill-card, .hard-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.skill-card:hover, .hard-card:hover {
+    transform: translateY(-6px); /* 🔥 se levanta */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* 🔥 sombra */
 }

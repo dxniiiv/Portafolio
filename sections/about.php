@@ -21,10 +21,11 @@
 
     <!-- Educación -->
     <div class="card">
-        <div class="card-header">
-            <h3 data-lang="educacion">Educación</h3>
-            <img src="img/educacion.png" alt="Educación">
-        </div>
+     <div class="card-header">
+        <h3 data-lang="educacion">
+            <i class='bx bxs-graduation'></i> Educación
+        </h3>
+    </div>
 
         <p data-lang="carrera"><strong>Ingeniería en Sistemas y Redes Informática</strong></p>
         <span data-lang="universidad">
@@ -35,9 +36,10 @@
     <!-- Intereses -->
     <div class="card">
         <div class="card-header">
-            <h3 data-lang="intereses">Intereses</h3>
-            <img src="img/intereses.png" alt="Intereses">
-        </div>
+    <h3 data-lang="intereses">
+        <i class='bx bx-star'></i> Intereses
+     </h3>
+    </div>
 
         <div class="interests">
             <div class="interest-item">
@@ -46,7 +48,7 @@
             </div>
 
             <div class="interest-item">
-                <img src="img/kanban.png" alt="Kanban">
+                <i class='bx bx-layer kanban-icon'></i>
                 <p>Kanban</p>
             </div>
         </div>
