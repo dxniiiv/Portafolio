@@ -17,6 +17,9 @@
 
 <?php include 'sections/skills.php'; ?>
 
+<?php include 'includes/footer.php'; ?>
+
+
 <script src="script.js"></script>
 </body>
 </html>

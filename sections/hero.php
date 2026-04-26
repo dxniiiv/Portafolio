@@ -31,8 +31,8 @@
         </button>
 
         <div class="cv-options">
-            <a href="pdf/cv español.pdf" download>Español</a>
-            <a href="pdf/cv ingles.pdf" download>English</a>
+            <a href="pdf/curriculum_esp.pdf" download>Español</a>
+            <a href="pdf/curriculun_eng.pdf" download>English</a>
         </div>
     </div>
 
@@ -50,7 +50,7 @@
     </div>
 
     <div class="hero-img">
-        <img src="img/Inicio.jpeg" alt="Daniel">
+        <img src="img/cv.png" alt="Daniel">
     </div>
 
 </section>

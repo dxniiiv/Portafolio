@@ -11,55 +11,80 @@ body {
 }
 
 /* NAVBAR */
+/* NAVBAR GENERAL */
 .navbar {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%); /* 🔥 centra perfectamente */
-    width: auto; /* 🔥 ya no ocupa todo */
+    position: sticky;
+    top: 0;
     z-index: 1000;
+    background: #0f172a; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
+/* CONTENEDOR */
 .nav-container {
-    margin: 20px auto;
-    min-width: 600px; 
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 10px 50px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    border: 2px solid rgba(0, 0, 0, 0.1);
-
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px 40px;
 }
 
+/* IZQUIERDA */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-left img {
+    width: 45px;
+    height: auto;
+}
+
+.nav-tagline {
+    font-size: 13px;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+/* NAV DERECHA (tu menú) */
 nav ul {
     display: flex;
-    list-style: none;
-    gap: 35px;
     align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
+    position: relative;
     text-decoration: none;
-    color: #0f172a;
-    font-weight: 600;
-    display: inline-block;
 }
 
-nav ul li a:hover {
-    color: #005187; /* 🔥 cambia color al pasar el mouse */
-    transform: scale(1.1);
+/* línea oculta */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #00bfff; /* celeste */
+    transition: width 0.3s ease;
 }
 
-nav ul li a.active {
-    color: #005187; 
-    border-bottom: 2px solid #0f5c83;
+/* hover */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .lang-switch span {
-    color: #0f172a; /* 🔥 color oscuro */
+    color: #fff; 
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
@@ -77,7 +102,6 @@ nav ul li a.active {
     align-items: center;
     justify-content: space-between; /* 🔥 mejor distribución */
     padding: 0 8%; /* 🔥 menos margen lateral */
-    padding-top: 90px; 
 }
 .cv-dropdown {
     position: relative;
@@ -484,4 +508,103 @@ nav ul li a.active {
 .skill-card:hover, .hard-card:hover {
     transform: translateY(-6px); /* 🔥 se levanta */
     box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* 🔥 sombra */
+}
+
+.footer {
+    background: #0f172a; 
+    color: white;
+    padding: 50px 10% 20px;
+}
+
+.footer-section.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 🔥 alineado a la izquierda */
+    gap: 10px;
+}
+
+.footer-logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.footer-phrase {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 250px; /* evita que se haga muy larga */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section.contact {
+    text-align: left;
+    margin-right: 190px;
+}
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.footer-section.contact i {
+    font-size: 18px;
+    color: #38bdf8; 
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-socials i {
+    font-size: 20px;
+}
+
+.footer-socials a:hover {
+    color: #38bdf8; 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
