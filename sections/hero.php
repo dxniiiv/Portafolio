@@ -21,9 +21,9 @@
 
       <div class="hero-buttons">
 
-    <button class="btn primary">
-        <i class='bx bx-chat'></i> <span data-lang="contactame">Contáctame</span>
-    </button>
+   <a href="#contacto" class="btn primary">
+    <i class='bx bx-chat'></i> <span data-lang="contactame">Contáctame</span>
+    </a>
 
     <div class="cv-dropdown">
         <button class="btn secondary">
@@ -31,8 +31,8 @@
         </button>
 
         <div class="cv-options">
-            <a href="pdf/curriculum_esp.pdf" download>Español</a>
-            <a href="pdf/curriculun_eng.pdf" download>English</a>
+            <a href="pdf/cvdaniel_esp.pdf" download>Español</a>
+            <a href="pdf/cvdaniel_eng.pdf" download>English</a>
         </div>
     </div>
 

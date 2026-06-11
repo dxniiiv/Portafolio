@@ -9,9 +9,9 @@
         <img src="img/logo_footer.png" alt="Logo">
      </div>
 
-    <p class="footer-phrase">
-        Estrategia, tecnología y valor en cada decisión.
-     </p>
+    <p class="footer-phrase" data-lang="footerFrase">
+    Estrategia, tecnología y valor en cada decisión.
+    </p>
 
     </div>
 
@@ -20,8 +20,8 @@
 
     <p>
         <i class='bx bx-envelope'></i>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniielvargas0@gmail.com" target="_blank">
-            daniielvargas0@gmail.com
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniiielvargas27@gmail.com" target="_blank">
+            daniiielvargas27@gmail.com
         </a>
     </p>
 
