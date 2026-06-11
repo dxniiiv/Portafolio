@@ -4,7 +4,11 @@
 
     <div class="contact-container">
 
-        <form id="contactForm" action="send_mail.php" method="POST">
+        <form action="https://formsubmit.co/daniiielvargas27@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.danielvargass.com?status=success">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
 
             <div class="form-group">
                 <label data-lang="nombreLabel">Nombre</label>
@@ -29,7 +33,5 @@
         </form>
 
     </div>
-
-    <div id="formMessage" class="form-message" style="display:none;"></div>
 
 </section>

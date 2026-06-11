@@ -291,22 +291,6 @@ document.querySelectorAll(".carousel").forEach(carousel => {
         images[index].classList.add("active");
     }, 3000);
 });
-
-// ===== MENSAJE FORMULARIO =====
-const urlParams = new URLSearchParams(window.location.search);
-const status = urlParams.get('status');
-const formMessage = document.getElementById('formMessage');
-
-if (status && formMessage) {
-    formMessage.style.display = 'inline-block';
-    if (status === 'success') {
-        formMessage.classList.add('success');
-        formMessage.textContent = translations[currentLang].mensajeExito;
-    } else if (status === 'error') {
-        formMessage.classList.add('error');
-        formMessage.textContent = translations[currentLang].mensajeError;
-    }
-}
 // ===== FILTROS CERTIFICADOS =====
 const certFilters = document.querySelectorAll('.cert-filter');
 const certCards = document.querySelectorAll('.cert-card');
